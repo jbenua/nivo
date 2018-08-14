@@ -34,6 +34,7 @@ const LegendSvg = ({
     itemHeight,
     itemDirection,
     itemsSpacing,
+    onItemClick,
     symbolSize,
     symbolSpacing,
     symbolShape,
@@ -77,6 +78,7 @@ const LegendSvg = ({
                     label={label}
                     fill={fill}
                     textColor={textColor}
+                    onClick={onItemClick}
                 />
             ))}
         </g>
@@ -116,6 +118,7 @@ LegendSvg.propTypes = {
         DIRECTION_BOTTOM_TO_TOP,
     ]).isRequired,
     itemsSpacing: PropTypes.number.isRequired,
+    onItemClick: PropTypes.func,
     symbolSize: PropTypes.number,
     symbolSpacing: PropTypes.number,
     symbolShape: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),

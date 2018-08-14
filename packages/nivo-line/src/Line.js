@@ -86,6 +86,7 @@ const Line = ({
     enableStackTooltip,
 
     legends,
+    onLegendItemClick,
 }) => {
     const motionProps = {
         animate,
@@ -182,6 +183,7 @@ const Line = ({
                                 containerWidth={width}
                                 containerHeight={height}
                                 data={legendData}
+                                onItemClick={onLegendItemClick}
                             />
                         )
                     })}

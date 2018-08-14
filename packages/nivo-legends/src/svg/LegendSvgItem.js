@@ -39,6 +39,7 @@ class LegendSvgItem extends Component {
             textColor,
             direction,
             justify,
+            onClick,
         } = this.props
 
         const { symbolX, symbolY, labelX, labelY, labelAnchor, labelAlignment } = computeItemLayout(
@@ -55,7 +56,10 @@ class LegendSvgItem extends Component {
         const Symbol = symbolByShape[symbolShape]
 
         return (
-            <g transform={`translate(${x},${y})`}>
+            <g
+                transform={`translate(${x},${y})`}
+                onClick={typeof onClick == 'function' ? onClick.bind(this) : null}
+            >
                 <Symbol x={symbolX} y={symbolY} size={symbolSize} fill={fill} />
                 <text
                     textAnchor={labelAnchor}
@@ -93,6 +97,7 @@ class LegendSvgItem extends Component {
             DIRECTION_BOTTOM_TO_TOP,
         ]).isRequired,
         justify: PropTypes.bool.isRequired,
+        onClick: PropTypes.func,
     }
 
     static defaultProps = {

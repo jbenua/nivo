@@ -48,6 +48,7 @@ const BoxLegendSvg = ({
     symbolSpacing,
     symbolShape,
     textColor,
+    onItemClick,
 }) => {
     const { width, height } = computeDimensions({
         itemCount: data.length,
@@ -80,6 +81,7 @@ const BoxLegendSvg = ({
             itemHeight={itemHeight}
             itemDirection={itemDirection}
             itemsSpacing={itemsSpacing}
+            onItemClick={onItemClick}
             symbolSize={symbolSize}
             symbolSpacing={symbolSpacing}
             symbolShape={symbolShape}
@@ -131,6 +133,7 @@ BoxLegendSvg.propTypes = {
         DIRECTION_BOTTOM_TO_TOP,
     ]),
     itemsSpacing: PropTypes.number.isRequired,
+    onItemClick: PropTypes.func,
     symbolSize: PropTypes.number,
     symbolSpacing: PropTypes.number,
     symbolShape: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),

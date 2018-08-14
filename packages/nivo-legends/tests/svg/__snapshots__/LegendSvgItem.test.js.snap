@@ -2,6 +2,7 @@
 
 exports[`should support bottom-to-top direction 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect
@@ -29,6 +30,7 @@ exports[`should support bottom-to-top direction 1`] = `
 
 exports[`should support bottom-to-top direction justified 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect
@@ -56,6 +58,7 @@ exports[`should support bottom-to-top direction justified 1`] = `
 
 exports[`should support left-to-right direction 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect
@@ -83,6 +86,7 @@ exports[`should support left-to-right direction 1`] = `
 
 exports[`should support left-to-right direction justified 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect
@@ -110,6 +114,7 @@ exports[`should support left-to-right direction justified 1`] = `
 
 exports[`should support right-to-left direction 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect
@@ -137,6 +142,7 @@ exports[`should support right-to-left direction 1`] = `
 
 exports[`should support right-to-left direction justified 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect
@@ -164,6 +170,7 @@ exports[`should support right-to-left direction justified 1`] = `
 
 exports[`should support top-to-bottom direction 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect
@@ -191,6 +198,7 @@ exports[`should support top-to-bottom direction 1`] = `
 
 exports[`should support top-to-bottom direction justified 1`] = `
 <g
+  onClick={null}
   transform="translate(0,0)"
 >
   <rect

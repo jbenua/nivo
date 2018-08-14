@@ -298,3 +298,22 @@ stories.add('with custom tooltip', () => (
         }}
     />
 ))
+
+stories.add('interactive', () => (
+    <Line
+        {...commonProperties}
+        isInteractive={true}
+        legends={[
+            {
+                anchor: 'bottom',
+                direction: 'row',
+                translateY: 50,
+                itemWidth: 80,
+                itemHeight: 20,
+                symbolSize: 12,
+                symbolShape: 'circle',
+            },
+        ]}
+        onLegendItemClick={id => alert(`${id} clicked!`)}
+    />
+))
