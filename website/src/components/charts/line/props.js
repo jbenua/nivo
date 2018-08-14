@@ -386,5 +386,11 @@ export default [
         required: false,
         default: defaults.tooltip,
     },
+    {
+        key: 'onLegendItemClick',
+        type: '{Function}',
+        required: false,
+        description: `Fires when legend item was clicked. Will receive elements' id`,
+    },
     ...motionProperties(['Line'], defaults),
 ]
