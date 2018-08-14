@@ -53,12 +53,13 @@ class LegendSvgItem extends Component {
             }
         )
 
+        const handleOnClick = () => onClick(label);
         const Symbol = symbolByShape[symbolShape]
 
         return (
             <g
                 transform={`translate(${x},${y})`}
-                onClick={typeof onClick == 'function' ? onClick.bind(this) : null}
+                onClick={typeof onClick == 'function' ? handleOnClick.bind(this) : null}
             >
                 <Symbol x={symbolX} y={symbolY} size={symbolSize} fill={fill} />
                 <text
