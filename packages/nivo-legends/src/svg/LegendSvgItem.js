@@ -53,7 +53,7 @@ class LegendSvgItem extends Component {
             }
         )
 
-        const handleOnClick = () => onClick(label);
+        const handleOnClick = () => onClick(label)
         const Symbol = symbolByShape[symbolShape]
 
         return (
